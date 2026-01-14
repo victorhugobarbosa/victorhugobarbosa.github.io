@@ -15,14 +15,15 @@ export function Hero() {
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 md:left-auto md:right-0 md:translate-x-0 w-[800px] h-[800px] z-0 opacity-50 pointer-events-none mix-blend-luminosity">
                 <div className="relative w-full h-full">
                     <Image
-                        src="/me.png"
+                        src="/profile_new.jpg"
                         alt="Victor Hugo"
                         fill
-                        className="object-cover object-bottom mask-image-gradient"
+                        className="object-cover object-top mask-image-gradient"
                         style={{
                             maskImage: 'linear-gradient(to bottom, black 0%, transparent 100%)',
                             WebkitMaskImage: 'linear-gradient(to bottom, black 50%, transparent 100%)'
                         }}
+                        priority
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
                     <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent" />
