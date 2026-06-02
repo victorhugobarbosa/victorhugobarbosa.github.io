@@ -12,21 +12,21 @@ export function Hero() {
             <div className="absolute bottom-[-20%] right-[-10%] w-[500px] h-[500px] bg-neon-green/10 rounded-full blur-[120px] pointer-events-none" />
 
             {/* User Image - Artistic Background */}
-            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 md:left-auto md:right-0 md:translate-x-0 w-[800px] h-[800px] z-0 opacity-50 pointer-events-none mix-blend-luminosity">
+            <div className="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 md:left-auto md:right-0 md:translate-x-0 w-[700px] z-0 opacity-55 pointer-events-none mix-blend-luminosity">
                 <div className="relative w-full h-full">
                     <Image
                         src="/profile_new.jpg"
                         alt="Victor Hugo"
                         fill
-                        className="object-cover object-top mask-image-gradient"
+                        className="object-cover object-[center_15%]"
                         style={{
-                            maskImage: 'linear-gradient(to bottom, black 0%, transparent 100%)',
-                            WebkitMaskImage: 'linear-gradient(to bottom, black 50%, transparent 100%)'
+                            maskImage: 'linear-gradient(to bottom, transparent 0%, black 12%, black 70%, transparent 100%), linear-gradient(to right, transparent 0%, black 25%)',
+                            WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 12%, black 70%, transparent 100%), linear-gradient(to right, transparent 0%, black 25%)',
+                            maskComposite: 'intersect',
+                            WebkitMaskComposite: 'destination-in',
                         }}
                         priority
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
-                    <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent" />
                 </div>
             </div>
 
