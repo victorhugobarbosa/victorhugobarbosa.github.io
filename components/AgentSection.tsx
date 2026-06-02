@@ -84,10 +84,15 @@ export function AgentSection() {
                         Utilizo o poder do <strong className="text-white">n8n</strong> e da <strong className="text-white">Evolution API</strong> para criar assistentes inteligentes que vivem no WhatsApp. Além de chatbots, desenvolvo <strong className="text-white">MCP Servers</strong> (Model Context Protocol) que permitem à IA ler seus bancos de dados locais, acessar arquivos e controlar sistemas com segurança total. Transformo o Claude/OpenAI em funcionários que conhecem sua empresa.
                     </p>
 
-                    <button className="flex items-center gap-3 px-8 py-4 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold rounded-lg transition-all shadow-[0_0_20px_rgba(37,211,102,0.3)] hover:shadow-[0_0_30px_rgba(37,211,102,0.5)]">
+                    <a
+                        href="https://agente-consultor.vercel.app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-3 px-8 py-4 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold rounded-lg transition-all shadow-[0_0_20px_rgba(37,211,102,0.3)] hover:shadow-[0_0_30px_rgba(37,211,102,0.5)]"
+                    >
                         <MessageSquare size={20} />
                         Testar Agente ao Vivo
-                    </button>
+                    </a>
                 </motion.div>
             </div>
         </section>
